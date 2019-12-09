@@ -133,9 +133,10 @@ GameObject:
   - component: {fileID: 923067}
   - component: {fileID: 923068}
   - component: {fileID: 923069}
+  - component: {fileID: 923070}
   m_Layer: 0
   m_Name: Button1
-  m_TagString: Button1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,7 +216,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -242,6 +243,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &923070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f722da70fad50439d8b7aa45450376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 97
 --- !u!1 &79189439
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,9 +385,10 @@ GameObject:
   - component: {fileID: 246380691}
   - component: {fileID: 246380692}
   - component: {fileID: 246380693}
+  - component: {fileID: 246380694}
   m_Layer: 0
   m_Name: Button2
-  m_TagString: Button2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,7 +468,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -480,6 +495,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &246380694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246380689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f722da70fad50439d8b7aa45450376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 115
 --- !u!1 &251251599
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,9 +572,10 @@ GameObject:
   - component: {fileID: 287971223}
   - component: {fileID: 287971224}
   - component: {fileID: 287971225}
+  - component: {fileID: 287971226}
   m_Layer: 0
   m_Name: Button3
-  m_TagString: Button3
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -626,7 +655,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -653,6 +682,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &287971226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287971221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f722da70fad50439d8b7aa45450376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 100
 --- !u!1 &333011373
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,9 +742,10 @@ GameObject:
   - component: {fileID: 449618304}
   - component: {fileID: 449618305}
   - component: {fileID: 449618306}
+  - component: {fileID: 449618307}
   m_Layer: 0
   m_Name: Button5
-  m_TagString: Button5
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -782,7 +825,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -809,6 +852,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &449618307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449618302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f722da70fad50439d8b7aa45450376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 107
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,9 +1530,10 @@ GameObject:
   - component: {fileID: 1163362205}
   - component: {fileID: 1163362206}
   - component: {fileID: 1163362207}
+  - component: {fileID: 1163362208}
   m_Layer: 0
   m_Name: Button4
-  m_TagString: Button4
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1556,7 +1613,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1583,6 +1640,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1163362208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163362203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f722da70fad50439d8b7aa45450376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: 106
 --- !u!1 &1206905029
 GameObject:
   m_ObjectHideFlags: 0
