@@ -4,21 +4,35 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-	//public GameObject effect;
+
 	public KeyCode key;
+
+	public GameObject effect;
+
+	private SpriteRenderer buttonLight;
+
 	private bool triggerEntered = false;
    	
    	private GameObject currentNote;
 
+
+   	void Start(){
+
+   		//buttonLight = GetComponentInChildren<SpriteRenderer>();
+   	}
+
     // Update is called once per frame
     void Update()
     {
-        if(triggerEntered){
-        	if(Input.GetKeyDown(key)){
-	        	//Instantiate(effect, transform.position, Quaternion.identity);
+    	if(Input.GetKeyDown(key)){
+        	if(triggerEntered){
+        	   	Instantiate(effect, transform.position, Quaternion.identity);
 	            Destroy(currentNote);
+        	}else{
+        		//buttonLight.color = Color.red;
         	}	
         }
+        //buttonLight.color = Color.white;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
