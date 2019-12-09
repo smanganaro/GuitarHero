@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour
         if (timeBtwSpawns <= 0)
         {
             int rand = Random.Range(0, MAX_NOTES);
-            Instantiate(noteTemplate[rand], transform.position, Quaternion.identity);
+            Instantiate(noteTemplate[rand], noteTemplate[rand].transform.position, Quaternion.identity);
             timeBtwSpawns = startTimeBtwSpawns;
             if (startTimeBtwSpawns > minTime) {
                 startTimeBtwSpawns -= timeDecrease;
