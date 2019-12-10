@@ -9,7 +9,9 @@ public class Button : MonoBehaviour
 
 	public GameObject effect;
 
-	private SpriteRenderer buttonLight;
+	private SpriteRenderer[] lightSprite;
+
+	private Transform buttonLight;
 
 	private bool triggerEntered = false;
    	
@@ -18,7 +20,11 @@ public class Button : MonoBehaviour
 
    	void Start(){
 
-   		//buttonLight = GetComponentInChildren<SpriteRenderer>();
+		lightSprite = GetComponentsInChildren<SpriteRenderer>();
+   		/*buttonLight = this.transform.Find("ButtonLight");
+   		if (buttonLight != null){
+   			lightSprite = buttonLight.GetComponent<SpriteRenderer>(); 
+   		}*/
    	}
 
     // Update is called once per frame
@@ -29,23 +35,27 @@ public class Button : MonoBehaviour
         	   	Instantiate(effect, transform.position, Quaternion.identity);
 	            Destroy(currentNote);
         	}else{
-        		//buttonLight.color = Color.red;
+        		StartCoroutine( missingNote() );
         	}	
-        }
-        //buttonLight.color = Color.white;
+        }       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-    	Debug.Log("Hello");
-
     	triggerEntered = true;
     	currentNote = other.gameObject;
-
     }
 
     private void OnTriggerExit2D(){
     	triggerEntered = false;
     	currentNote = null;
     }
+
+
+	private IEnumerator missingNote(){
+		lightSprite[1].color = Color.red;
+		yield return new WaitForSeconds(0.5f);
+		lightSprite[1].color = Color.white;
+	}
+
 }
